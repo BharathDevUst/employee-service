@@ -26,7 +26,7 @@ pipeline {
 			    bat "docker rm -f employee-server"
 			    bat "docker rmi -f employee-image"
 			    bat "docker build -t employee-image ."
-                bat "docker run -p 8090:8090 -d --name employee-server employee-image"
+                bat "docker run -p 8082:8082 -d --name employee-server employee-image"
             }
 		}
 	}
